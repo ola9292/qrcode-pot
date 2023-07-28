@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <title>QR Code Factory</title>
+</head>
+<body>
+    <div class="container">
+        <h1>QR-Code Generator</h1>
+        <div class="alert" id="alert">Enter a url!</div>
+        <p>Turn your website url to a QR code and help people reach you faster.</p>
+        <input type="url" id="url" placeholder="Enter your URL..." class="url">
+        <select id="size" class="size">
+            <option value="">Choose QR size</option>
+            <option value="150">150 X 150</option>
+            <option value="200">200 X 200</option>
+            <option value="300">300 X 300</option>
+            <option value="400">400 X 400</option>
+        </select>
+        <button id="qr-btn" class="qr-btn">Generate QR Code</button>
+        <div id="qrcode" class="qrcode"></div>
+        <button id="save" style="display:none; margin-top: 7px;"></button>
+    </div>
+   
+      <script src="script.js"></script>
+</body>
+</html>
